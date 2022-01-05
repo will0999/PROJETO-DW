@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/clock_icon.png" />
+  </head>
+  <body>
+    <body background="img/background.png" id="background">
+    <div class="wrapper fadeInDown">
+  <div id="formContent">
+    
+    <!-- Tabs Titles -->
+    <h2 class="active"> Login </h2>
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="img/Clock.png" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login -->
+    <div id="alert-box">
+      <p class="alert">Usuário ou senha incorretos</p>
+    </div>
+    <form class="form">
+      <input type="email" id="email" name="email" required="required" placeholder="Email">
+      <input type="password" id="password" name="password" required="required" placeholder="Senha" autocomplete="off">
+      <input type="submit" class="submit-btn" id="login-form-submit" formaction="Home.html" class="fadeIn fourth" value="Entrar">
+    </form>
+    
+    <div id="formFooter">
+      <a class="underlineHover" href="signup.html">Registrar-se</a>
+    </div>
+
+
+  </div>
+</div>
+  <script src="./js/signin.js" type="module"></script>
+  </body>
+</html>

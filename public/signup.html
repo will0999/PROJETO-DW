@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registrar-se</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/clock_icon.png" />
+  </head>
+  <body>
+    <body background="img/background.png" id="background">
+    <div class="wrapper fadeInDown">
+  <div id="formContent">
+    
+    <!-- Tabs Titles -->
+    <h2 class="active"> Registrar-se </h2>
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="img/Clock.png" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login -->
+    <form>
+      <input type="text" id="name" required="required" class="fadeIn second" name="name" placeholder="Nome do usuário">
+      <input type="email" id="email" required="required" class="fadeIn third" name="email" placeholder="Email" autocomplete="off">
+      <input type="password" id="password" required="required" class="fadeIn third" name="password" placeholder="Senha" autocomplete="off">
+      <input type="submit" class="fadeIn fourth" value="Criar usuário">
+    </form>
+
+  </div>
+</div>
+  <script src="./js/signup.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      if (!localStorage.getItem("@Hardware-Info:token")) {
+        window.location.href = "/signin.html";
+      }
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1280 height=1080, initial-scale=1">
+    <title>Vizualizador de Hardware</title>
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/clock_icon.png" />
+  </head>
+  <body>
+    <body background="../img/background.png" id="background">
+    <div class="container">
+      <div class="head">
+        <h1>BEM VINDO</h1>
+      </div>
+      <div class="SpeedTest">
+        <div class="title">
+          <h1 id="title"><br>Veja seu hardware aqui</h1>
+        </div>
+        <a href="benchmark.html">
+        <center>
+        <img src="../img/Clock.png" alt="relogio" id="clock" title="Teste de desempenho" width="25%"></a></center>
+      </div>
+    </div>
+    <div class="backbutton">
+      <a href="#" onclick="signout()">
+      <image src="../img/backButton.png" alt="Voltar" id="back" title="Voltar">
+      </a>
+    </div>
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>

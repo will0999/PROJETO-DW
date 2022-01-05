@@ -1,0 +1,98 @@
+background {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+div .head {
+  margin: auto;
+  width: 75%;  
+  animation: intro 2s;
+}
+.head h1{
+  font-family: fantasy;
+  color: white;
+  text-align: center;
+  font-size: 300%;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+
+  border: 2px solid;
+  border-radius: 75px 75px 1000px 1000px;
+  border-color: brown; 
+  background-image: linear-gradient(to right, green, yellow , red);
+}
+
+.title {
+  position: inherit;
+  top: 9%;
+  left: 39%;
+  font-family: fantasy;
+  color:white;
+  text-align: center;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+div .SpeedTest {
+  margin: auto;
+  width: 75%;
+  height: 580px;
+
+  border: 2px solid;
+  border-radius: 36.5%;
+  border-color: brown;
+  background-image: linear-gradient(to right, rgba(0, 128, 0, 0.750), rgba(255, 255, 0, 0.750) , rgba(255, 0, 0, 0.750));
+  animation: intro2 2s;
+  
+}
+#clock {
+  position: relative;
+  top: 120px;
+  animation: FadeIn 3s;
+  transition: all ease-out 3s;
+}
+#clock:hover {
+  transform: rotateZ(360deg) scale(2.0); 
+
+}
+
+@keyframes intro {
+  from{
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes intro2 {
+  from{
+    transform: translateY(1000px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+
+#back {
+  width: 75px;
+  position: relative;
+  right: -10px;
+  top: 25px;
+
+  animation: back 1s infinite alternate;
+}
+@keyframes back {
+  from {
+    transform: translateX(-30px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes intro {
+  from{
+    transform: translateX(-2000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}

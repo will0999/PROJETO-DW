@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      if (!localStorage.getItem("@Hardware-Info:token")) {
+        window.location.href = "/signin.html";
+      }
+    </script>
+    <meta charset="utf-8">
+    <title>Especificações</title>
+    <link href="benchmark.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/clock_icon.png" />
+  </head>
+  <body>
+    <body background="../img/background.png" id="background">
+    <div class="container2">
+      <div class="head2">
+        <h1>&nbsp;Suas especificações</h1>
+      </div>
+      <div class="components">
+
+       <p id="cpuText" align="left"><a href="https://canaltech.com.br/hardware/o-que-e-cpu/" title="Funções da CPU"><img src="../img/cpu.png" alt="processador" id="cpu" class="hardware" align="left"></a>&ensp;.Processador:<textarea id="cpuoutput" readonly></textarea></p>
+       
+       <p id="ramText" align="left"><a href="https://www.zoom.com.br/memoria-ram/deumzoom/para-que-serve-memoria-ram-pc" title="Funções da RAM"><img src="../img/ram.png" alt="ram" id="ram" class="hardware" align="left"></a><br>.Memória RAM:<textarea id="ramoutput" readonly></textarea></p>
+
+       <p id="hdText" align="left"><a href="https://www.techtudo.com.br/noticias/2012/03/para-que-serve-o-hd.ghtml" title="Funções do HD"><img src="../img/hd.png" alt="disco rígido" id="hd" class="hardware" align="left"></a><br>&ensp;.Armazenamento: <textarea id="hdoutput" readonly></textarea></p>
+
+       <p id="gpuText" align="left"><a href="https://www.tecmundo.com.br/hardware/1127-o-que-e-gpu-.htm" title="Funções da GPU"><img src="../img/gpu.png" alt="gpu" id="gpu" class="hardware" align="left"></a><br>&ensp;.Placa de vídeo: <textarea id="gpuoutput" readonly></textarea></p>
+      </div>
+      <div class="backbutton">
+        <a href="index.html">
+        <image src="../img/backButton.png" alt="Voltar" id="back" title="Voltar">
+        </a>
+      </div>
+    </div>
+  <script src="js/index.js" type="module"></script>
+  </body>
+</html>
