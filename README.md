@@ -2,10 +2,10 @@ Projeto da cadeira de desenvolvimento web do curso redes de computadores do IFPB
 
 - Para executar a aplicação use os seguintes comandos:
 
-```diff
+```python
 
-+ $ npm install
+\033[1;32m $ npm install
 
-+ $ node src/index.js
+\033[1;32m $ node src/index.js
 ```
 
